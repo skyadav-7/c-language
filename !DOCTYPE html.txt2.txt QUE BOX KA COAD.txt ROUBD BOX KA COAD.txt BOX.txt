@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Flow Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <STYle>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fabcb4; /* Light sky blue background */
+}
+
+.waterfall {
+    width: 200px; /* Width of the waterfall */
+    height: 400px; /* Height of the waterfall */
+    background-color: #045b07; /* Green color for the waterfall */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+.water {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: linear-gradient(to bottom, rgba(0, 176, 255, 0.7), rgba(111, 192, 229, 0.938)); /* Water gradient */
+    position: absolute;
+    bottom: 0; /* Start from bottom */
+    animation: flow 5s linear infinite; /* Flow animation */
+}
+
+@keyframes flow {
+    0% {
+        transform: translateY(0); /* Start at the bottom */
+    }
+    100% {
+        transform: translateY(-100%); /* Move to the top */
+    }
+}
+
+    </STYle>
+</head>
+<body>
+    <div class="waterfall">
+        <div class="water">Water</div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+        <div class="water"></div>
+    </div>
+</body>
+</html>
